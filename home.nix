@@ -11,8 +11,6 @@
       rebuild = "sudo nixos-rebuild switch --flake ~/.nixos-dots#optinix";
     };
   };
-
-  home.file.".config/alacritty".source = ./config/alacritty;
   home.file.".config/i3".source = ./config/i3;
 
   home.packages = with pkgs; [
